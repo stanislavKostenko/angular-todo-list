@@ -1,0 +1,12 @@
+<div class="todo__list-wrapper">
+  <ul class="todo__list">
+    <li class="todo__list__item" *ngFor="let item of todoList; index as id">
+      <i class="material-icons todo__list__item__check-icon"
+      (click)="toggleTodo(item)"
+      [ngClass]="{'completed': item.completed}">check_circle_outline</i>
+      <span class="todo__list__item__title">{{item.title}}</span>
+      <i class="material-icons todo__list__item__cancel"
+      (click)="deleteTodo(id)">cancel</i>
+    </li>
+  </ul>
+</div>

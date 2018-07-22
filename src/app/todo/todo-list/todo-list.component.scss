@@ -1,0 +1,43 @@
+.todo__list-wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.todo__list {
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 223, 223, 0.6);
+    border-bottom: 2px solid #727272;
+    margin-bottom: 5px;
+
+    &__title {
+      width: 70%;
+      font-size: 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-style: italic;
+      color: #5f5f5f;
+    }
+
+    &__cancel {
+      cursor: pointer;
+    }
+
+    &__check-icon {
+      cursor: pointer;
+
+
+      &.completed {
+        background-color: #fff;
+        border-radius: 50%;
+        color: #23ffa5;
+      }
+    }
+  }
+}
