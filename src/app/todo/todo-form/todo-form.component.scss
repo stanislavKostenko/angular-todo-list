@@ -1,0 +1,21 @@
+.mat-form-field {
+  padding: 0;
+}
+
+.todo__form-wrapper {
+  width: 100%;
+}
+
+.todo__form {
+  width: 100%;
+
+  &__field {
+    width: 100%;
+
+    &__input {
+      width: 100%;
+      font-size: 20px;
+      padding: 5px 0;
+    }
+  }
+}
